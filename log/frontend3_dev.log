@@ -1,0 +1,58 @@
+May 06 18:06:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 06 18:06:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 18:06:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 18:06:10 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 06 18:06:10 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+May 06 18:06:10 symfony [info] {sfPHPView} Decorate content with "C:\xampp5\htdocs\sf2\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+May 06 18:06:10 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+May 06 18:06:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 06 18:06:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 18:06:10 symfony [info] {sfWebDebugLogger} Configuration 95.91 ms (9)
+May 06 18:06:10 symfony [info] {sfWebDebugLogger} Factories 47.02 ms (1)
+May 06 18:06:10 symfony [info] {sfWebDebugLogger} Action "default/index" 0.08 ms (1)
+May 06 18:06:10 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 14.46 ms (1)
+May 06 18:06:10 symfony [info] {sfWebResponse} Send content (30685 o)
+May 06 22:21:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/utente/" (/).
+May 06 22:21:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 06 22:21:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 22:21:04 symfony [info] {sfWebDebugLogger} Configuration 4.02 ms (5)
+May 06 22:21:04 symfony [info] {sfWebDebugLogger} Factories 128.05 ms (1)
+May 06 22:21:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /utente/show with parameters array (  'module' => 'utente',  'action' => 'show',)
+May 06 22:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 22:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 22:21:11 symfony [info] {utenteActions} Call "utenteActions->executeShow()"
+May 06 22:21:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 06 22:21:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.nome AS u__nome, u.cognome AS u__cognome FROM utenti u WHERE (u.id = ?) LIMIT 1 - ()
+May 06 22:21:11 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prova3.utenti' doesn't exist
+May 06 22:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 06 22:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 22:21:11 symfony [info] {sfWebDebugLogger} Configuration 29.74 ms (9)
+May 06 22:21:11 symfony [info] {sfWebDebugLogger} Factories 16.51 ms (1)
+May 06 22:21:11 symfony [info] {sfWebDebugLogger} Action "utente/show" 127.41 ms (1)
+May 06 22:21:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.14 ms (1)
+May 06 22:23:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /utente/show with parameters array (  'module' => 'utente',  'action' => 'show',)
+May 06 22:23:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 22:23:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 22:23:10 symfony [info] {utenteActions} Call "utenteActions->executeShow()"
+May 06 22:23:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 06 22:23:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.nome AS u__nome, u.cognome AS u__cognome FROM utenti u WHERE (u.id = ?) LIMIT 1 - ()
+May 06 22:23:10 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "utente/show".
+May 06 22:23:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 06 22:23:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 22:23:10 symfony [info] {sfWebDebugLogger} Configuration 5.96 ms (8)
+May 06 22:23:10 symfony [info] {sfWebDebugLogger} Factories 17.83 ms (1)
+May 06 22:23:10 symfony [info] {sfWebDebugLogger} Action "utente/show" 55.22 ms (1)
+May 06 22:23:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.89 ms (2)
+May 06 22:24:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /indirizzo/show with parameters array (  'module' => 'indirizzo',  'action' => 'show',)
+May 06 22:24:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 22:24:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 22:24:01 symfony [info] {indirizzoActions} Call "indirizzoActions->executeShow()"
+May 06 22:24:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 06 22:24:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT i.id AS i__id, i.via AS i__via, i.indirizzo_id AS i__indirizzo_id FROM indirizzo i WHERE (i.id = ?) LIMIT 1 - ()
+May 06 22:24:01 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "indirizzo/show".
+May 06 22:24:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 06 22:24:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 22:24:01 symfony [info] {sfWebDebugLogger} Configuration 27.11 ms (9)
+May 06 22:24:01 symfony [info] {sfWebDebugLogger} Factories 17.72 ms (1)
+May 06 22:24:01 symfony [info] {sfWebDebugLogger} Action "indirizzo/show" 32.58 ms (1)
+May 06 22:24:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)

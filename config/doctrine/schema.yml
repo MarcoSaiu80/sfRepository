@@ -1,97 +1,3 @@
-BlogArticle:
-  connection: doctrine
-  tableName: blog_article
-  columns:
-    id:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    title:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    content:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    BlogComment:
-      local: id
-      foreign: article_id
-      type: many
-BlogComment:
-  connection: doctrine
-  tableName: blog_comment
-  columns:
-    id:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    article_id:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    author:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    content:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    created_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    updated_at:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    BlogArticle:
-      local: article_id
-      foreign: id
-      type: one
-
 Utenti:
   connection: doctrine
   tableName: utenti
@@ -109,3 +15,50 @@ Utenti:
       primary: false
       notnull: false
       autoincrement: false
+    cognome:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+      Indirizzo:
+        class: Indirizzo
+        local: indirizzo_id
+        foreign: id
+        foreignAlias: Utente
+        foreignType: one
+        type: one
+Indirizzo:
+  connection: doctrine
+  tableName: indirizzo
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    via:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    indirizzo_id:
+          type: string()
+          fixed: false
+          unsigned: false
+          primary: false
+          notnull: false
+          autoincrement: false
+  relations:
+      Utente:
+        class: utenti
+        local: indirizzo_id
+        foreign: id
+        foreignAlias: Utenti
+        foreignType: one
+        type: one

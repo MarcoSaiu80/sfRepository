@@ -1981,3 +1981,47 @@ May 01 21:28:46 symfony [info] {sfWebDebugLogger} Action "contenuto/elenco" 19.4
 May 01 21:28:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
 May 01 21:28:46 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/elenco" 9.75 ms (1)
 May 01 21:28:46 symfony [info] {sfWebResponse} Send content (33375 o)
+May 05 15:10:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contenuto/show with parameters array (  'module' => 'contenuto',  'action' => 'show',)
+May 05 15:10:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 05 15:10:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 05 15:10:50 symfony [info] {contenutoActions} Call "contenutoActions->executeShow()"
+May 05 15:10:50 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\modules/contenuto/templates/showSuccess.php"
+May 05 15:10:50 symfony [info] {sfPHPView} Decorate content with "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 05 15:10:50 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 05 15:10:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 05 15:10:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 05 15:10:50 symfony [info] {sfWebDebugLogger} Configuration 47.24 ms (10)
+May 05 15:10:50 symfony [info] {sfWebDebugLogger} Factories 21.78 ms (1)
+May 05 15:10:50 symfony [info] {sfWebDebugLogger} Action "contenuto/show" 1.29 ms (1)
+May 05 15:10:50 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/show" 10.44 ms (1)
+May 05 15:10:50 symfony [info] {sfWebResponse} Send content (29816 o)
+May 06 13:32:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contenuto/show with parameters array (  'module' => 'contenuto',  'action' => 'show',)
+May 06 13:32:39 symfony [info] {myUser} Automatic user logout due to timeout
+May 06 13:32:39 symfony [info] {myUser} User is not authenticated
+May 06 13:32:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 13:32:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 13:32:39 symfony [info] {contenutoActions} Call "contenutoActions->executeShow()"
+May 06 13:32:39 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\modules/contenuto/templates/showSuccess.php"
+May 06 13:32:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 06 13:32:39 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 06 13:32:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 06 13:32:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 13:32:39 symfony [info] {sfWebDebugLogger} Configuration 7.62 ms (9)
+May 06 13:32:39 symfony [info] {sfWebDebugLogger} Factories 73.76 ms (1)
+May 06 13:32:39 symfony [info] {sfWebDebugLogger} Action "contenuto/show" 0.09 ms (1)
+May 06 13:32:39 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/show" 39.59 ms (1)
+May 06 13:32:39 symfony [info] {sfWebResponse} Send content (30541 o)
+May 06 13:32:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contenuto/update with parameters array (  'module' => 'contenuto',  'action' => 'update',)
+May 06 13:32:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 06 13:32:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 06 13:32:43 symfony [info] {contenutoActions} Call "contenutoActions->executeUpdate()"
+May 06 13:32:43 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\modules/contenuto/templates/updateSuccess.php"
+May 06 13:32:43 symfony [info] {sfPHPView} Decorate content with "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 06 13:32:43 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 06 13:32:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 06 13:32:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 06 13:32:43 symfony [info] {sfWebDebugLogger} Configuration 7.70 ms (9)
+May 06 13:32:43 symfony [info] {sfWebDebugLogger} Factories 22.60 ms (1)
+May 06 13:32:43 symfony [info] {sfWebDebugLogger} Action "contenuto/update" 0.05 ms (1)
+May 06 13:32:43 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/update" 10.27 ms (1)
+May 06 13:32:43 symfony [info] {sfWebResponse} Send content (29484 o)

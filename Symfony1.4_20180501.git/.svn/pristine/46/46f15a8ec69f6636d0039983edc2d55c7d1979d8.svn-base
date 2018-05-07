@@ -1,7 +1,0 @@
-all:
-  doctrine:
-    class: sfDoctrineDatabase
-    param:
-      dsn: 'mysql:host=localhost;dbname=blog'
-      username: root
-      password: null

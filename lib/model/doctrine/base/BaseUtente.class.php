@@ -1,4 +1,6 @@
 <?php
+// Connection Component Binding
+Doctrine_Manager::getInstance()->bindComponent('Utente', 'doctrine');
 
 /**
  * BaseUtente
@@ -7,11 +9,17 @@
  * 
  * @property integer $id
  * @property string $nome
+ * @property timestamp $created_at
+ * @property timestamp $updated_at
  * 
- * @method integer getId()   Returns the current record's "id" value
- * @method string  getNome() Returns the current record's "nome" value
- * @method Utente  setId()   Sets the current record's "id" value
- * @method Utente  setNome() Sets the current record's "nome" value
+ * @method integer   getId()         Returns the current record's "id" value
+ * @method string    getNome()       Returns the current record's "nome" value
+ * @method timestamp getCreatedAt()  Returns the current record's "created_at" value
+ * @method timestamp getUpdatedAt()  Returns the current record's "updated_at" value
+ * @method Utente    setId()         Sets the current record's "id" value
+ * @method Utente    setNome()       Sets the current record's "nome" value
+ * @method Utente    setCreatedAt()  Sets the current record's "created_at" value
+ * @method Utente    setUpdatedAt()  Sets the current record's "updated_at" value
  * 
  * @package    sf2
  * @subpackage model
@@ -23,22 +31,46 @@ abstract class BaseUtente extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('utente');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 8, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
              'primary' => true,
              'autoincrement' => true,
+             'length' => 8,
              ));
         $this->hasColumn('nome', 'string', 255, array(
              'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
              'length' => 255,
+             ));
+        $this->hasColumn('created_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
+             ));
+        $this->hasColumn('updated_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
              ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $timestampable0 = new Doctrine_Template_Timestampable(array(
-             ));
-        $this->actAs($timestampable0);
+        
     }
 }

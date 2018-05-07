@@ -23,4 +23,3 @@
 <p>chi è l'amore mio del cuore, ma chi vuoi che sia è <b>Alessandra Melis</b></p>
 <?php echo auto_link_text("www.marcosaiu.it"); ?>
 <?php echo saiu_tag(); ?>
-    

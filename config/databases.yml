@@ -2,6 +2,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=blog'
+      dsn: 'mysql:host=localhost;dbname=prova3'
       username: root
       password: null
